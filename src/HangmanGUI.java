@@ -115,7 +115,7 @@ public class HangmanGUI extends JPanel {
             }
         }
 
-        if(incorrectGuess) {
+        if(incorrectGuess && incorrectAnswers.indexOf(guess) == -1) {
             incorrectGuesses++;
             incorrectAnswers = incorrectAnswers + guess;
         }
